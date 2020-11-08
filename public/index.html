@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sockets</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <section id="landing">
+        <h1>SOCKET CHAT</h1>
+        <p>where BROMANCE is allowed</p>
+        <span id="down">&#8595;</span>
+      </section>
+
+      <section id="login">
+        <form id="loginForm" action="">
+          <p>Enter username</p>
+          <input type="text" id="usernameValue" />
+          <button class="btn">Join !</button>
+        </form>
+      </section>
+
+      <section id="chat">
+        <div id="textMessagesContainer">
+
+          <div id="messagesContainer">
+            
+          </div>
+
+          <form id="chatForm">
+            <input type="text" id="message" autocomplete="off" />
+            <button class="btn btnMessage">Send</button>
+          </form>
+        </div>
+
+        <div id="onlineUsers">
+        </div>
+
+        
+      </section>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
