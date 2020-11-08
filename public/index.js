@@ -26,14 +26,16 @@ $(document).ready(() => {
 // handle username and visibility of chat and login.
 $("#login").submit((e) => {
   e.preventDefault();
-  username = $("#usernameValue").val();
+  username = $(".usernameValue").val();
+  console.log(`houna ${username}`)
   if (username) {
-    socket.emit("username", $("#usernameValue").val());
-    $("#usernameValue").val("");
+    socket.emit("username", username);
+    $(".usernameValue").val("");
     $("#login").css("display", "none");
     $("#chat").css("display", "flex");
   } else {
-    $("#usernameValue").attr("id", "error");
+    console.log("ana hna a zayn")
+    $(".usernameValue").addClass("error");
   }
 });
 

@@ -74,7 +74,7 @@ body {
   font-size: 22px;
 }
 
-#usernameValue {
+.usernameValue {
   border: 1px black solid;
   border-radius: 4px;
   padding: 12px;
@@ -103,7 +103,7 @@ body {
   color: var(--white-color);
 }
 
-#error {
+.error {
   border: 1px red solid;
   border-radius: 4px;
   padding: 12px;
@@ -129,6 +129,14 @@ body {
   /* border: 1px black solid; */
   display: flex;
   flex-direction: column;
+  border: 2px var(--secondary-text) solid;
+  border-radius: 10px;
+  margin: 5px 10px;
+
+}
+
+#blur {
+  filter: blur(5px);
 }
 
 #chatForm {
@@ -143,6 +151,7 @@ body {
   width: 65%;
   resize: vertical;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 #messagesContainer {
@@ -157,6 +166,9 @@ body {
 
 #onlineUsers {
   flex-grow: 1;
+  border: 2px var(--secondary-text) solid;
+  border-radius: 10px;
+  margin: 5px 10px;
 }
 
 .username {
@@ -197,9 +209,9 @@ body {
 }
 
 .user {
+  margin-top: 10px;
   padding: 10px 15px;
   font-family: "Roboto", Helvetica, sans-serif;
-  /* border-bottom: 1px solid var(--secondary-text); */
   text-align: center;
   border-radius: 10px;
 }

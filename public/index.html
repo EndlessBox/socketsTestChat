@@ -22,17 +22,14 @@
       <section id="login">
         <form id="loginForm" action="">
           <p>Enter username</p>
-          <input type="text" id="usernameValue" />
+          <input type="text" class="usernameValue" />
           <button class="btn">Join !</button>
         </form>
       </section>
 
       <section id="chat">
         <div id="textMessagesContainer">
-
-          <div id="messagesContainer">
-            
-          </div>
+          <div id="messagesContainer"></div>
 
           <form id="chatForm">
             <input type="text" id="message" autocomplete="off" />
@@ -40,10 +37,7 @@
           </form>
         </div>
 
-        <div id="onlineUsers">
-        </div>
-
-        
+        <div id="onlineUsers"></div>
       </section>
     </div>
     <script src="/socket.io/socket.io.js"></script>
